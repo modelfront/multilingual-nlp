@@ -1,6 +1,20 @@
 # How to make your NLP system multilingual
 
-Workshop goal: this should be easy!
+This should be easy!
+
+---
+### Approaches
+
+
+
+
+---
+## Examples
+
+- Classification
+- Search - commerce
+- Search - Polixis
+
 
 ---
 
