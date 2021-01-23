@@ -93,11 +93,10 @@ XLM
 
 ---
 
-## Long-tail languages 
+# Extreme scenario: long-tail languages 
 
 Alemannic (Schwyzertüütsch) and Rumantsch
+Similar to transliteration - no standard orthography
 
 Bootstrapping from similar languages
-
-
 
