@@ -91,6 +91,13 @@ XLM
 
 ...
 
+---
+
+## Long-tail languages 
+
+Alemannic (Schwyzertüütsch) and Rumantsch
+
+Bootstrapping from similar languages
 
 
 
