@@ -3,10 +3,7 @@
 This should be easy!
 
 ---
-## Approaches
-
-
-
+## The problem
 
 ---
 ### Examples
@@ -15,6 +12,8 @@ This should be easy!
 - Search - commerce
 - Search - Polixis
 
+---
+## Approaches
 
 ---
 
