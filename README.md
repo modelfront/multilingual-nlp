@@ -3,13 +3,13 @@
 This should be easy!
 
 ---
-### Approaches
+## Approaches
 
 
 
 
 ---
-## Examples
+### Examples
 
 - Classification
 - Search - commerce
@@ -18,7 +18,7 @@ This should be easy!
 
 ---
 
-## Trade-offs
+### Trade-offs
 Ease
 Simplicity
 Data requirements
@@ -28,7 +28,7 @@ Speed
 Price
 ...
 
-## Decision inputs
+### Decision inputs
 How accurate?
 How many languages?
 How much labelled data?
@@ -56,7 +56,7 @@ Which machine translation system to use?
 - a special system (transliteration, Schwiizertüütsch...)
 
 
-# Pre-trained machine translation models
+### Pre-trained machine translation models
 
 - Fairseq
 
@@ -64,7 +64,7 @@ Which machine translation system to use?
 ...
 
 
-# Machine translation APIs
+### Machine translation APIs
 
 - Most languages: Google Translate, Lingvanex
 
@@ -73,7 +73,7 @@ Which machine translation system to use?
 - Best price: Lingvanex, ModernMT
 
 
-# Special machine translation systems
+### Special machine translation systems
 
 - transliteration (deepchar)
 
@@ -85,17 +85,17 @@ Which machine translation system to use?
 
 ## Multilingual language models
 
-BERT
+### BERT
 
-LASER
+### LASER
 
-XLM
+### XLM
 
 ...
 
 ---
 
-# Extreme scenario: long-tail languages 
+## Extreme scenario: long-tail languages 
 
 Alemannic (Schwyzertüütsch) and Rumantsch
 Similar to transliteration - no standard orthography
