@@ -29,10 +29,12 @@ Price
 ...
 
 ## Decision inputs
+How accurate?
 How many languages?
 How much labelled data?
-How much throughput?
-Speed/latency requirements?
+How much throughput/speed?
+How much effort?
+How frequent?  (Retraining)
 
 
 ---
