@@ -15,6 +15,15 @@ This should be easy!
 ---
 ## Approaches
 
+- Manually create more labelled training data for each language
+
+- Machine-translate at inference/query time
+
+- Machine-translate the training data
+
+- Use a cross-lingual model like BERT or LASER and hope for transfer learning
+
+
 ---
 
 ### Trade-offs
