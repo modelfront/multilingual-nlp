@@ -97,7 +97,10 @@ Which machine translation system to use?
 ## Extreme scenario: long-tail languages 
 
 Alemannic (Schwyzertüütsch) and Rumantsch
-Similar to transliteration - no standard orthography
+
+Similar to transliteration:
+ - monolingual data, but no parallel data
+ - no standard orthography
 
 Bootstrapping from similar languages
 
