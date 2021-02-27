@@ -43,13 +43,13 @@ What is the relationship between training data size and accuracy?
 
 ### Results
 
-| System                                | Datasets                 | English | Spanish | Russian |
-|---------------------------------------|--------------------------|:-------:|:-------:|:-------:|
-| Real data                             | en, es, ru               |    x%   |    y%   |    z%   |
-|                                       |                          |         |         |         |
-| Zero-shot                             | en                       |    x%   |    y%   |    z%   |
-| Translate at inference time           | en                       |    x%   |    y%   |    z%   |
-| Translate at training time            | en, es(en), ru(en)       |    x%   |    y%   |    z%   |
-| Translate and filter at training time | en, f(es(en)), f(ru(en)) |         |         |         |
+| System                                | Datasets                 | | English | Spanish | Russian |
+|---------------------------------------|--------------------------|-|:-------:|:-------:|:-------:|
+| Real data                             | en, es, ru               | |    x%   |    y%   |    z%   |
+|                                       |                          | |         |         |         |
+| Zero-shot                             | en                       | |    x%   |    y%   |    z%   |
+| Translate at inference time           | en                       | |    x%   |    y%   |    z%   |
+| Translate at training time            | en, es(en), ru(en)       | |    x%   |    y%   |    z%   |
+| Translate and filter at training time | en, f(es(en)), f(ru(en)) | |         |         |         |
 
 
