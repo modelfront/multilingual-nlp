@@ -13,13 +13,24 @@ For this lab, we'll train models for **binary classification** on a multilingual
 > ...  
 > *Disclaimer: The dataset for this competition contains text that may be considered profane, vulgar, or offensive.*  
 
+Importantly, this dataset includes human-generated human-labelled data in multiple languages.
+
+How do our multilingual techniques do compared to a scenario where we actually have human-generated human-labelled data?
 
 ---
 
 ### Datasets
 
+Google has provided about half a million English comments as well as data in other languages.
 
-### Evaluation
+> Currently, Perspective API has production TOXICITY and SEVERE_TOXICITY attributes in the following languages:
+>    English (en)  
+>    Spanish (es)  
+>    French (fr)  
+>    German (de)  
+>    Portuguese (pt)  
+>    Italian (it)  
+>    Russian (ru)  
 
 
 ### Questions
@@ -28,27 +39,43 @@ How well does a system trained on English only do on other languages?
 
 How does adding other languages affect the accuracy on English?
 
-Does the quality of the machine translation matter?
+What is the effect of machine translation quality?
 
 What is the relationship between training data size and accuracy?
+
+What is the relationship between the number of languages covered and the zero-shot accuracy?
+
+How does all of the above vary across tasks?
+
 
 ---
 
 ### Experiments
 
+We'll use a small amount of the training data.
+
 <Colab notebook>
 
 ---
 
-### Results
+### Evaluation and results
 
-| System                                | Datasets                 | | `en` | `fr`  | `ru` |
-|---------------------------------------|--------------------------|-|:-------:|:-------:|:-------:|
-| Real multilingual data                | `en`, `fr`, `ru`               | |    x%   |    y%   |    z%   |
-|                                       |                          | |         |         |         |
-| Zero-shot                             | `en`                       | |    x%   |    y%   |    z%   |
-| Translate at inference time           | `en`                       | |    x%   |    y%   |    z%   |
+| System                                | Datasets                       | | `en` | `fr`  | `ru` |
+|---------------------------------------|--------------------------------|-|:-------:|:-------:|:-------:|
+| Zero-shot                             | `en`                           | |    x%   |    y%   |    z%   |
+| Real data, separate                   | `fr`                           | |         |    y%   |         |
+| Real data, multilingual               | `en`, `fr`, `ru`               | |    x%   |    y%   |    z%   |
+|                                       |                                | |         |         |         |
+| Translate at inference time           | `en`                           | |    x%   |    y%   |    z%   |
 | Translate at training time            | `en`, `fr(en)`, `ru(en)`       | |    x%   |    y%   |    z%   |
-| Translate and filter at training time | `en`, `f(fr(en))`, `f(ru(en))` | |         |         |         |
+| Translate and filter at training time | `en`, `f(fr(en))`, `f(ru(en))` | |    ?    |    ?    |    ?    |
+
+
+### Advanced
+
+- Inspect the false positives and false negatives
+- Scale up the number of languages
+- Use more data
+
 
 
