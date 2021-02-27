@@ -4,8 +4,7 @@
 For this lab, we'll train models for **binary classification** on a multilingual dataset of Wikipedia comments labelled for **toxicity** by humans.
 
 ## [Jigsaw Multilingual Toxic Comment Classification](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/data?select=test.csv)
-#### Use TPUs to identify toxicity comments across multiple languages
-
+> ### Use TPUs to identify toxicity comments across multiple languages
 > The Conversation AI team, a research initiative founded by Jigsaw and Google, builds technology to protect voices in conversation.  
 > ...  
 > This year, we're taking advantage of Kaggle's new TPU support and challenging you to build multilingual models with English-only training data.  
