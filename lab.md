@@ -45,7 +45,7 @@ What is the relationship between training data size and accuracy?
 
 | System                                | Datasets                 | | English | Spanish | Russian |
 |---------------------------------------|--------------------------|-|:-------:|:-------:|:-------:|
-| Real data                             | en, es, ru               | |    x%   |    y%   |    z%   |
+| Real multilingual data                | en, es, ru               | |    x%   |    y%   |    z%   |
 |                                       |                          | |         |         |         |
 | Zero-shot                             | en                       | |    x%   |    y%   |    z%   |
 | Translate at inference time           | en                       | |    x%   |    y%   |    z%   |
