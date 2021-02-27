@@ -1,7 +1,7 @@
 ### [How to make your NLP system multilingual](/)
 # Lab
 
-For this lab, we'll use a dataset of Wikipedia comments labelled for toxicity by humans.
+For this lab, we'll train models for **binary classification** on a multilingual dataset of Wikipedia comments labelled for **toxicity** by humans.
 
 ## [Jigsaw Multilingual Toxic Comment Classification](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/data?select=test.csv)
 #### Use TPUs to identify toxicity comments across multiple languages
