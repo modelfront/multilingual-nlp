@@ -96,7 +96,8 @@ For niche tasks
 ###### Transliteration
 [deepchar](https://github.com/deepchar)
 ###### Long-tail languages
-Schwiizertüütsch, Rumantsch, Patois arpitan, gaming
+Schwiizertüütsch, Rumantsch, Patois arpitan
+###### Gaming
 
 ---
 
@@ -114,7 +115,7 @@ Schwiizertüütsch, Rumantsch, Patois arpitan, gaming
 
 ## Extreme scenario: long-tail languages 
 
-Alemannic (Schwyzertüütsch), Rumantsch, Patois arpitan, gaming
+Alemannic (Schwyzertüütsch), Rumantsch or Patois arpitan
 
 Similar to transliteration:
 
