@@ -140,4 +140,4 @@ Can also bridge to German
 
 # Lab
 
-See [lab.md]
+See [lab.md](lab.md)
