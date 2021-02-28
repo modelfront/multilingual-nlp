@@ -9,10 +9,13 @@ So you have an NLP system - a chat bot, a search engine, NER, a classifier... - 
 
 And you want to make it work for other languages - or even for all languages.
 
-##### Examples
+Examples:
 
 ##### Chat
 Answering with the correct answer in a chat
+
+##### Entity recognition
+Find mentions of protein interactions in medical research papers
 
 ##### Classification
 Detecting malicious comments on a social network (Facebook, Wikipedia) or malicious ads on an ads network (Google)
@@ -67,7 +70,7 @@ How often does the dataset update?
 
 https://cs.stackexchange.com/questions/65200/what-is-a-difference-between-cross-lingual-ir-and-multi-lingual-ir
 
-"The first workshop on CLIR was held in Zürich during the SIGIR-96 conference."
+> “The first workshop on CLIR was held in Zürich during the SIGIR-96 conference.”
 
 ---
 ## Machine translation
@@ -81,8 +84,10 @@ They can be fine-tuned to customize and are available on HuggingFace.
 #### APIs
 Google Translate, Microsoft Translate, DeepL, ModernMT, Lingvanex, [...](https://modelfront/compare)
 
-- most languages: Google Translate, Lingvanex
-###### Fastest customisation: ModernMT
+###### Most languages
+Google Translate, Lingvanex
+###### Fastest customization
+ModernMT
 ###### Best price
 Lingvanex, ModernMT, unofficial APIs
 
@@ -90,10 +95,8 @@ Lingvanex, ModernMT, unofficial APIs
 For niche tasks
 ###### Transliteration
 [deepchar](https://github.com/deepchar)
-###### Schwiizertüütsch and Rumantsch
-de ⇆ als, fr ⇆ als, en ⇆ als
-
-###### Gaming
+###### Long-tail languages
+Schwiizertüütsch, Rumantsch, Patois arpitan, gaming
 
 ---
 
@@ -111,7 +114,7 @@ de ⇆ als, fr ⇆ als, en ⇆ als
 
 ## Extreme scenario: long-tail languages 
 
-Alemannic (Schwyzertüütsch), Rumantsch, and Patois arpitan
+Alemannic (Schwyzertüütsch), Rumantsch, Patois arpitan, gaming
 
 Similar to transliteration:
 
@@ -122,5 +125,16 @@ But no parallel data
 
 ### Bootstrapping
 
-We can bootstrap with monolingual data if machine translation supports similar languages like German and French.
+We can bootstrap from monolingual data if we have bad machine translation
+for **back-translation**.
+
+##### Rules-based
+Using rules or dictionaries
+For e.g. Alemannic:German
+
+##### Similar languages
+Like German and French
+For e.g. Alemannic:English
+
+
 
