@@ -1,6 +1,6 @@
 # How to make your NLP system multilingual
 
-This should be easy!
+
 
 ---
 ## The problem
@@ -9,14 +9,16 @@ So you have an NLP system - a chat bot, a search engine, NER, a classifier... - 
 
 And you want to make it work for other languages - or even for all languages.
 
----
-### Examples
+##### Examples
 
-- Classifying comments on a social network
+##### Chat
+Answering with the correct answer in a chat
 
-- Searching across products in a marketplace
+##### Classification
+Detecting malicious comments on a social network (Facebook, Wikipedia) or malicious ads on an ads network (Google)
 
-- Search across person and company names (Polixis)
+##### Search
+[Searching](https://modelfront.com/search) across products (eBay, AirBnb) person and company names (Facebook, Polixis)
 
 
 ---
@@ -30,7 +32,7 @@ Manually create more labelled training data for each language
 #### Hack
 Machine-translate at inference or query time
 
-#### Artificial data
+#### Synthetic data
 Machine-translate the training data
 
 #### Zero-shot
@@ -109,11 +111,16 @@ de ⇆ als, fr ⇆ als, en ⇆ als
 
 ## Extreme scenario: long-tail languages 
 
-Alemannic (Schwyzertüütsch) and Rumantsch
+Alemannic (Schwyzertüütsch), Rumantsch, and Patois arpitan
 
 Similar to transliteration:
- - monolingual data, but no parallel data
- - no standard orthography
 
-Bootstrapping from similar languages
+##### Monolingual data
+But no parallel data
+
+##### No standard orthography
+
+### Bootstrapping
+
+We can bootstrap with monolingual data if machine translation supports similar languages like German and French.
 
