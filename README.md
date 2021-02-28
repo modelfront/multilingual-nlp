@@ -118,10 +118,9 @@ Alemannic (Schwyzertüütsch), Rumantsch, Patois arpitan, gaming
 
 Similar to transliteration:
 
-##### Monolingual data
-But no parallel data
+- **Monolingual data** but no parallel data
 
-##### No standard orthography
+- **No standard** orthography
 
 ### Bootstrapping
 
@@ -129,12 +128,12 @@ We can bootstrap from monolingual data if we have bad machine translation
 for **back-translation**.
 
 ##### Rules-based
-Using rules or dictionaries
+Using rules or dictionaries  
 For e.g. Alemannic:German
 
 ##### Similar languages
-Like German and French
-For e.g. Alemannic:English
-
+Using existing systems that support languages like German and French  
+For e.g. Alemannic:English  
+Can also bridge to German
 
 
