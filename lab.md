@@ -62,14 +62,14 @@ We'll use a small amount of the training data.
 
 | System     | System                     | Datasets                                                               | | `en`    | `it`<sup>en</sup> | `es`<sup>en</sup> | `tr`<sup>en</sup> |
 |-------------------|---------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
-| English-only  | Translate at inference time | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
+| English-only  | Translate at inference | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
 |                |                            |                                                                    | | **`en`**| **`it`**| **`es`**| **`tr`**|
-| English-only - Do nothing | "Zero-shot"| `en`                                                                   | |   (x%)  |    y%   |    z%   |    w%   |
+| English-only | Do nothing ("Zero-shot") | `en`                                                                   | |   (x%)  |    y%   |    z%   |    w%   |
 | Italian-only - Control  |              | `it`                                                                    | |         |    y%   |         |         |
-| Multilingual - Control | Real data "$$$"     | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
-|                                        |                                                                        | |         |         |         |    w%   |
-| Multilingual -  Synthetic | Translate at training time             | `en`, `en`<sup>`it`</sup>, `en`<sup>`es`</sup>, `en`<sup>`tr`</sup>    | |    x%   |    y%   |    z%   |    w%   |
-| Multilingual - Synthetic | Translate and filter at training time  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?%   |
+| Multilingual - Control | Real data ("$$$") | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
+|                                        |                                                                        | |         |         |         |       |
+| Multilingual -  Synthetic | Translate at training             | `en`, `en`<sup>`it`</sup>, `en`<sup>`es`</sup>, `en`<sup>`tr`</sup>    | |    x%   |    y%   |    z%   |    w%   |
+| Multilingual - Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?%   |
 
 
 ### Advanced
@@ -79,5 +79,6 @@ We'll use a small amount of the training data.
 - Inspect the false positives and false negatives
 - Scale up the number of languages
 - Use more data
+- Change the filtering threshold
 
 
