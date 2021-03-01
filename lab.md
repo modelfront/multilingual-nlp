@@ -33,6 +33,7 @@ Google has provided about half a million English comments as well as data in oth
 >    Russian (ru)  
 
 
+
 ### Questions
 
 How well does a system trained on English only do on other languages?
@@ -60,7 +61,7 @@ We'll use a small amount of the training data.
 
 ### Evaluation and results
 
-| System           | Description               | Training datasets                                | | `en`    | [`it`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d1fe43324be001701493e) | [`es`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d1ff73324be0017014956) | [`tr`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d200d3324be001701496e) |
+| System           | Description               | Training datasets                                | | `en`    | [`it`<sup>en</sup>](data/lazy) | [`es`<sup>en</sup>](data/lazy) | [`tr`<sup>en</sup>](data/lazy) |
 |-------------------|---------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
 | English  | Translate at inference <br/> "Lazy" | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
@@ -70,10 +71,27 @@ We'll use a small amount of the training data.
 | Italian <br/> Real data  |  Human benchmark   | `it`                                                                    | |         |    y%   |         |         |
 | Multilingual <br/> Real data | Human benchmark <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
-| Multilingual <br/> Synthetic | Translate at training             | `en`, `en`<sup>`it`</sup>, `en`<sup>`es`</sup>, `en`<sup>`tr`</sup>    | |    x%   |    y%   |    z%   |    w%   |
+| Multilingual <br/> Synthetic | Translate at training <br/> "Eager" | `en`, [`en`<sup>`it`</sup>](data/eager), [`en`<sup>`es`</sup>](data/eager), [`en`<sup>`tr`</sup>](data/eager)    | |    x%   |    y%   |    z%   |    w%   |
 | Multilingual <br/> Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?   |
 
 `x`<sup>`y`</sup> indicates a dataset in language x that was machine-translated to language y.
+
+##### Translation and filtering
+
+Translation at inference to English:  
+ [`it`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d1fe43324be001701493e)
+ 
+ [`es`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d1ff73324be0017014956)
+ 
+ [`tr`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d200d3324be001701496e)
+
+Translation at training from English:
+ [`en`<sup>`it`</sup>](https://console.modelfront.com/#/evaluations/603d22a53324be0017014bec)
+ 
+ [`en`<sup>`es`</sup>](https://console.modelfront.com/#/evaluations/603d26463324be0017014c6e)
+ 
+ [`en`<sup>`tr`</sup>](https://console.modelfront.com/#/evaluations/603d265d3324be0017014c86)
+ 
 
 ---
 
