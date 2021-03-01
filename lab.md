@@ -65,6 +65,7 @@ We'll use a small amount of the training data.
 | English-only  | Translate at inference | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
 |                |                            |                                                                    | | **`en`**| **`it`**| **`es`**| **`tr`**|
 | English-only | Do nothing ("Zero-shot") | `en`                                                                   | |   (x%)  |    y%   |    z%   |    w%   |
+|                                        |                                                                        | |         |         |         |       |
 | Italian-only - Control  |              | `it`                                                                    | |         |    y%   |         |         |
 | Multilingual - Control | Real data ("$$$") | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
