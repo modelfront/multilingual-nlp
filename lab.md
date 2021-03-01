@@ -60,9 +60,10 @@ We'll use a small amount of the training data.
 
 ### Evaluation and results
 
-| System     | System                     | Datasets                                                               | | `en`    | `it`<sup>en</sup> | `es`<sup>en</sup> | `tr`<sup>en</sup> |
+| System     | Description                     | Training datasets                                | | `en`    | `it`<sup>en</sup> | `es`<sup>en</sup> | `tr`<sup>en</sup> |
 |-------------------|---------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
 | English-only  | Translate at inference | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
+|                                        |                                                                        | |         |         |         |       |
 |                |                            |                                                                    | | **`en`**| **`it`**| **`es`**| **`tr`**|
 | English-only | Do nothing ("Zero-shot") | `en`                                                                   | |   (x%)  |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
@@ -72,7 +73,7 @@ We'll use a small amount of the training data.
 | Multilingual -  Synthetic | Translate at training             | `en`, `en`<sup>`it`</sup>, `en`<sup>`es`</sup>, `en`<sup>`tr`</sup>    | |    x%   |    y%   |    z%   |    w%   |
 | Multilingual - Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?%   |
 
-`x`<sup>`y</sup> indicates a dataset in language x that was machine-translated to language y.
+`x`<sup>`y`</sup> indicates a dataset in language x that was machine-translated to language y.
 
 ### Advanced
 
