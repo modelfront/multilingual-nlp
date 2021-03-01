@@ -60,22 +60,26 @@ We'll use a small amount of the training data.
 
 ### Evaluation and results
 
-| System                                | Datasets                       | | `en` | `fr`  | `ru` |
-|---------------------------------------|--------------------------------|-|:-------:|:-------:|:-------:|
-| Zero-shot                             | `en`                           | |    x%   |    y%   |    z%   |
-| Real data, separate                   | `fr`                           | |         |    y%   |         |
-| Real data, multilingual               | `en`, `fr`, `ru`               | |    x%   |    y%   |    z%   |
-|                                       |                                | |         |         |         |
-| Translate at inference time           | `en`                           | |    x%   |    y%   |    z%   |
-| Translate at training time            | `en`, `fr(en)`, `ru(en)`       | |    x%   |    y%   |    z%   |
-| Translate and filter at training time | `en`, `f(fr(en))`, `f(ru(en))` | |    ?    |    ?    |    ?    |
+| System                                 | Datasets                                                               | | `en`    | `it`<sup>en</sup> | `es`<sup>en</sup> | `tr`<sup>en</sup> |
+|----------------------------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
+| English-only - Translate at inference time | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
+
+|                                            |                                                                    | | `en`    | `it`    |    `es` |    w%   |
+|--------------------------------------------|--------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
+| English-only - Do nothing - "Zero-shot"| `en`                                                                   | |   (x%)  |    y%   |    z%   |    w%   |
+| Italian-only - Control                | `it`                                                                    | |         |    y%   |         |         |
+| Multilingual - Real data - "$$$"       | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
+|                                        |                                                                        | |         |         |         |    w%   |
+| Multilingual - Translate at training time             | `en`, `en`<sup>`it`</sup>, `en`<sup>`es`</sup>, `en`<sup>`tr`</sup>    | |    x%   |    y%   |    z%   |    w%   |
+| Multilingual - Translate and filter at training time  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>`, `en`<sup>`tr` filtered</sup>` | |    ?    |    ?    |    ?    |    ?%   |
 
 
 ### Advanced
 
+- Ensembles and fine-tuning
+- Rebalancing
 - Inspect the false positives and false negatives
 - Scale up the number of languages
 - Use more data
-
 
 
