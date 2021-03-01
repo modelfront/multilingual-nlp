@@ -75,6 +75,8 @@ We'll use a small amount of the training data.
 
 `x`<sup>`y`</sup> indicates a dataset in language x that was machine-translated to language y.
 
+---
+
 ### Advanced
 
 - Ensembles and fine-tuning
