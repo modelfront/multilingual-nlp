@@ -60,7 +60,7 @@ We'll use a small amount of the training data.
 
 ### Evaluation and results
 
-| System           | Description               | Training datasets                                | | `en`    | `it`<sup>en</sup> | `es`<sup>en</sup> | `tr`<sup>en</sup> |
+| System           | Description               | Training datasets                                | | `en`    | [`it`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d1fe43324be001701493e) | [`es`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d1ff73324be0017014956) | [`tr`<sup>en</sup>](https://console.modelfront.com/#/evaluations/603d200d3324be001701496e) |
 |-------------------|---------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
 | English  | Translate at inference <br/> "Lazy" | `en`                                                               | |    x%   |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
