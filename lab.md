@@ -67,8 +67,8 @@ We'll use a small amount of the training data.
 |                |                            |                                                                    | | **`en`**| **`it`**| **`es`**| **`tr`**|
 | English | Do nothing <br/>"Zero-shot" | `en`                                                                   | |   (x%)  |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
-| Italian <br/> Benchmark  |              | `it`                                                                    | |         |    y%   |         |         |
-| Multilingual <br/> Benchmark | Real data <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
+| Italian <br/> Real data  |  Human benchmark   | `it`                                                                    | |         |    y%   |         |         |
+| Multilingual <br/> Readl data | Human benchmark <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
 |                                        |                                                                        | |         |         |         |       |
 | Multilingual <br/> Synthetic | Translate at training             | `en`, `en`<sup>`it`</sup>, `en`<sup>`es`</sup>, `en`<sup>`tr`</sup>    | |    x%   |    y%   |    z%   |    w%   |
 | Multilingual <br/> Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?   |
