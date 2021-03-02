@@ -1,5 +1,15 @@
 # How to make your NLP system multilingual
 
+Many NLP systems are built for one language first but, in the real world, content comes in many languages.
+
+Making your NLP system multilingual is easy conceptually and getting easier and easier thanks to new tools.
+
+What types of systems can we easily make multilingual?  What are the approaches and technologies?  How can we evaluate the results?
+
+> This repo was first created for a [workshop](https://appliedmldays.org/events/amld-epfl-2021/workshops/how-to-make-your-nlp-system-multilingual) at EPFL Applied Machine Learning Days 2021.
+> 
+> Adam Bittlingmayer, CEO, ModelFront  
+> Nerses Nersesyan, Junio AI Engineer, Polixis  
 
 
 ---
@@ -18,10 +28,17 @@ Answering with the correct answer in a chat
 Find mentions of protein interactions in medical research papers
 
 ##### Classification
-Detecting malicious comments on a social network (Facebook, Wikipedia) or malicious ads on an ads network (Google)
+Detecting malicious comments on a social network (Facebook, Wikipedia) or malicious ads on an ads network (Google Ads)
 
 ##### Search
-[Searching](https://modelfront.com/search) across products (eBay, AirBnb) person and company names (Facebook, Polixis)
+[Searching](https://modelfront.com/search) across products (eBay, AirBnb) person and company names (Facebook, Polixis) or places (Google Maps)
+
+Common theme:  
+- Real-world input - The data are crawled or user-generated.  We have no control over the input in production.
+- Numeric output - Classification, regression, retrieval, recommendation...  We are not required to generate text.
+
+What's *not* a flavor of this problem?  
+Translation itself.  Text generation like GPT-3.  Grammarly or LanguageTool.
 
 
 ---
@@ -30,19 +47,24 @@ Detecting malicious comments on a social network (Facebook, Wikipedia) or malici
 We see a few common approaches:
 
 #### Real data
-Manually create more labelled training data for each language
+Manually create more labelled training data for each language  
+$$$
 
-#### Hack
-Machine-translate at inference or query time
-
-#### Synthetic data
-Machine-translate the training data
+#### Translate at inference
+Machine-translate at inference or query time  
+"Lazy"
 
 #### Zero-shot
-Use a cross-lingual model like BERT or LASER and hope for transfer learning
+Fine-tune a multilingual pretrained model like BERT or LASER and hope for transfer learning  
+"Do nothing
+
+#### Translate at training
+Machine-translate at training data  
+"Eager"
 
 Or combinations of multiple approaches.
 
+So which approach to use when?
 
 ---
 
@@ -71,6 +93,7 @@ How often does the dataset update?
 https://cs.stackexchange.com/questions/65200/what-is-a-difference-between-cross-lingual-ir-and-multi-lingual-ir
 
 > “The first workshop on CLIR was held in Zürich during the SIGIR-96 conference.”
+
 
 ---
 ## Machine translation
@@ -102,6 +125,8 @@ Schwiizertüütsch, Rumantsch, Patois arpitan
 ---
 
 ## Multilingual language models
+
+Pretrained on large monolingual datasets with hundreds of languages
 
 ### BERT
 
@@ -141,4 +166,23 @@ Can also bridge to German
 
 # Lab
 
+We can apply these concepts on the *Jigsaw Multilingual Toxic Comment Classification* using Wikipedia datasets provided by Google.
+
 See [lab.md](lab.md)
+
+---
+
+# Conclusions
+
+It's easy and getting easier.
+
+The translation quality does not need to be perfect.
+
+Translating at inference or query time does not scale.
+
+There is no optimal approach - there are trade-offs.
+
+
+
+
+
