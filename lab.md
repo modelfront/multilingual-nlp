@@ -23,7 +23,7 @@ How do our multilingual techniques do compared to a scenario where we actually h
 
 Google has provided about half a million English comments as well as data in other languages.
 
-> Currently, Perspective API has production TOXICITY and SEVERE_TOXICITY attributes in the following languages:
+> Currently, Perspective API has production TOXICITY and SEVERE_TOXICITY attributes in the following languages:  
 >    English (en)  
 >    Spanish (es)  
 >    French (fr)  
