@@ -59,6 +59,7 @@ Try out the provided [notebook](https://github.com/modelfront/multilingual-nlp/t
 - BERT-based
 - small-amount of training data
 
+https://colab.research.google.com/drive/1d18u9XHLRCB6LxtSR3mPoFrlx3io8wA5?usp=sharing
 
 
 ---
