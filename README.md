@@ -8,8 +8,8 @@ What types of systems can we easily make multilingual?  What are the approaches 
 
 > This repo was first created for a [workshop](https://appliedmldays.org/events/amld-epfl-2021/workshops/how-to-make-your-nlp-system-multilingual) at EPFL Applied Machine Learning Days 2021.
 > 
+> Nerses Nersesyan, Junior AI Engineer, Polixis  
 > Adam Bittlingmayer, CEO, ModelFront  
-> Nerses Nersesyan, Junio AI Engineer, Polixis  
 
 
 ---
