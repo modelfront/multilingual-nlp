@@ -32,6 +32,7 @@ Google has provided about half a million English comments as well as data in oth
 >    Italian (it)  
 >    Russian (ru)  
 
+We don't actually have very much data for the languages other than English.
 
 
 ### Questions
@@ -53,9 +54,12 @@ How does all of the above vary across tasks?
 
 ### Experiments
 
-We'll use a small amount of the training data.
+Try out the provided [notebook](https://github.com/modelfront/multilingual-nlp/tree/main/notebook) in an environment like Google Colab.
 
-<Colab notebook>
+- BERT-based
+- small-amount of training data
+
+
 
 ---
 
@@ -75,6 +79,7 @@ We'll use a small amount of the training data.
 | Multilingual <br/> Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?   |
 
 `x`<sup>`y`</sup> indicates a dataset in language x that was machine-translated to language y.
+
 
 ##### Translation and filtering
 
@@ -97,11 +102,15 @@ Translation at training from English:
 
 ### Advanced
 
-- Ensembles and fine-tuning
-- Rebalancing
 - Inspect the false positives and false negatives
+- Inspect the greatest differences between systems
+- Ensemble and fine-tune
+- Rebalance
 - Scale up the number of languages
 - Use more data
+- Improve the translation
 - Change the filtering threshold
+- Train in a production environment
+- Serve in a production environment
 
 
