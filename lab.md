@@ -68,13 +68,13 @@ https://colab.research.google.com/drive/1d18u9XHLRCB6LxtSR3mPoFrlx3io8wA5?usp=sh
 
 | System           | Description               | Training datasets                                | | `en`    | [`it`<sup>en</sup>](data/lazy) | [`es`<sup>en</sup>](data/lazy) | [`tr`<sup>en</sup>](data/lazy) |
 |-------------------|---------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
-| English  | Translate at inference <br/> "Lazy" | `en`                                                               | |    97.5%   |    87.1%   |    87.6%   |    98%   |
+| English  | Translate at inference <br/> "Lazy" | `en`                                                               | |    97.5%   |    87.1%   |    87.6%   |    98.0%   |
 |                                        |                                                                        | |         |         |         |       |
 |                |                            |                                                                    | | **`en`**| **`it`**| **`es`**| **`tr`**|
 | English | Do nothing <br/>"Zero-shot" | `en`                                                                   | |   97.5%  |    80.5%   |    79.1%   |    93.4%   |
 |                                        |                                                                        | |         |         |         |       |
-| Italian <br/> Real data  |  Human benchmark   | `it`                                                                    | |         |    y%   |         |         |
-| Multilingual <br/> Real data | Human benchmark <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    x%   |    y%   |    z%   |    w%   |
+| Italian <br/> Real data  |  Human benchmark   | `it`                                                                    | |         |    86.9%   |         |         |
+| Multilingual <br/> Real data | Human benchmark <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    90.0%   |    85.7%   |    85.9%   |    97.0%   |
 |                                        |                                                                        | |         |         |         |       |
 | Multilingual <br/> Synthetic | Translate at training <br/> "Eager" | `en`, [`en`<sup>`it`</sup>](data/eager), [`en`<sup>`es`</sup>](data/eager), [`en`<sup>`tr`</sup>](data/eager)    | |    x%   |    y%   |    z%   |    w%   |
 | Multilingual <br/> Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?   |
