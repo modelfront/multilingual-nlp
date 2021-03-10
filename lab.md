@@ -66,12 +66,17 @@ https://colab.research.google.com/drive/1d18u9XHLRCB6LxtSR3mPoFrlx3io8wA5?usp=sh
 
 ### Evaluation and results
 
+- Adding other languages hurt English a bit (90.0% vs 97.5%)
+- Machine-translating at inference time was almost as using real multilingual human data
+But note that the real multilingual data is not very large.
+
+
 | System           | Description               | Training datasets                                | | `en`    | [`it`<sup>en</sup>](data/lazy) | [`es`<sup>en</sup>](data/lazy) | [`tr`<sup>en</sup>](data/lazy) |
 |-------------------|---------------------|------------------------------------------------------------------------|-|:-------:|:-------:|:-------:|:-------:|
-| English  | Translate at inference <br/> "Lazy" | `en`                                                               | |    97.5%   |    87.1%   |    87.6%   |    98.0%   |
+| English  | Translate at inference <br/> "Lazy" | `en`                                                               | |    **97.5%**   |    **87.1%**   |    **87.6%**   |    **98.0%**   |
 |                                        |                                                                        | |         |         |         |       |
 |                |                            |                                                                    | | **`en`**| **`it`**| **`es`**| **`tr`**|
-| English | Do nothing <br/>"Zero-shot" | `en`                                                                   | |   97.5%  |    80.5%   |    79.1%   |    93.4%   |
+| English | Do nothing <br/>"Zero-shot" | `en`                                                                   | |   **97.5%**  |    80.5%   |    79.1%   |    93.4%   |
 |                                        |                                                                        | |         |         |         |       |
 | Italian <br/> Real data  |  Human benchmark   | `it`                                                                    | |         |    86.9%   |         |         |
 | Multilingual <br/> Real data | Human benchmark <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    90.0%   |    85.7%   |    85.9%   |    97.0%   |
