@@ -66,8 +66,9 @@ https://colab.research.google.com/drive/1d18u9XHLRCB6LxtSR3mPoFrlx3io8wA5?usp=sh
 
 ### Evaluation and results
 
-- Adding other languages hurt English a bit (90.0% vs 97.5%)
-- Machine-translating at inference time was almost as using real multilingual human data
+- Adding other languages hurt English a bit (90.0% vs 97.5%).
+- Machine-translating at inference time was almost as good as using real multilingual human data.
+
 But note that the real multilingual data is not very large.
 
 
