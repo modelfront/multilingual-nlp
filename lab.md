@@ -82,7 +82,7 @@ But note that the real multilingual data is not very large.
 | Italian <br/> Real data  |  Human benchmark   | `it`                                                                    | |         |    86.9%   |         |         |
 | Multilingual <br/> Real data | Human benchmark <br/> "$$$" | `en`, `it`, `es`, `tr`                                                 | |    90.0%   |    85.7%   |    85.9%   |    97.0%   |
 |                                        |                                                                        | |         |         |         |       |
-| Multilingual <br/> Synthetic | Translate at training <br/> "Eager" | `en`, [`en`<sup>`it`</sup>](data/eager), [`en`<sup>`es`</sup>](data/eager), [`en`<sup>`tr`</sup>](data/eager)    | |    x%   |    y%   |    z%   |    w%   |
+| Multilingual <br/> Synthetic | Translate at training <br/> "Eager" | `en`, [`en`<sup>`it`</sup>](data/eager), [`en`<sup>`es`</sup>](data/eager), [`en`<sup>`tr`</sup>](data/eager)    | |    ?   |    ?   |    ?   |    ?   |
 | Multilingual <br/> Synthetic | Translate and filter at training  | `en`, `en`<sup>`it` filtered</sup>, `en`<sup>`es` filtered</sup>, `en`<sup>`tr` filtered</sup> | |    ?    |    ?    |    ?    |    ?   |
 
 `x`<sup>`y`</sup> indicates a dataset in language x that was machine-translated to language y.
